@@ -9,7 +9,7 @@ Semantic segmentation of remote sensing images (RSIs) plays a crucial role in va
 ## Highlight✨
 
 - To alleviate the computational burden of DPA, a squareplus linear attention (SLA) module is designed. This module leverages the associativity of matrix multiplication to linearly reduce complexity and employs a squareplus kernel function to enhance the representational capacity of the attention mechanism.
-- Building on the foundation of the SLA module, we introduce a novel network architecture, GLANet. GLANet capitalizes on the SLA's efficient complexity management and its prowess in capturing global feature dependencies, integrating these advantages into its structural design. Through the deployment of the SLA module, GLANet effectively optimizes the expression of global spatial features, rendering it exceptionally effective for large-scale RSI segmentation tasks..
+- Building on the foundation of the SLA module, we introduce a novel network architecture, GLANet. GLANet capitalizes on the SLA's efficient complexity management and its prowess in capturing global feature dependencies, integrating these advantages into its structural design. Through the deployment of the SLA module, GLANet effectively optimizes the expression of global spatial features, rendering it exceptionally effective for large-scale RSI segmentation tasks.
 
 
 
