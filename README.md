@@ -1,12 +1,12 @@
-# KBS 2026：A Global Linear Attention Network for Semantic Segmentation of Remote Sensing Images
+# 🧠 KBS 2026：A Global Linear Attention Network for Semantic Segmentation of Remote Sensing Images
 
 
-## Abstract👓
+## 👓Abstract
 
 Semantic segmentation of remote sensing images (RSIs) plays a crucial role in various fields, including land cover classification, environment monitoring, and urban planning. Although convolutional neural networks (CNNs) have demonstrated remarkable proficiency in the aforementioned fields, they also face considerable challenges. One such is the inadequate exploration of global dependencies within feature maps, which undermines the feature representations for each semantic category. Furthermore, the prevalent dot-product attention (DPA) in CNNs excels at capturing global semantic details, but suffers from quadratic computation complexity, limiting its practicality for processing large-scale RSIs. To address these challenges, we propose a novel global linear attention network (GLANet), embedding a squareplus linear attention (SLA) module. The SLA module efficiently captures global spatial information and establishes feature relationships by leveraging the associativity of matrix products, drastically reducing the computational load compared to typical DPA by at least 96%, and requiring 12%-26% less computational resources than previous linear attention methods. Extensive experiments validate that GLANet outperformed existing mainstream methods, achieving a mIoU improvement of 0.90% on Potsdam dataset and 0.63% on Vaihingen dataset, respectively. Besides, ablation studies and mathematical analyses further substantiate the efficiency and superiority of the SLA module.
 
 
-## Highlight✨
+## ✨Highlight
 
 - To alleviate the computational burden of DPA, a squareplus linear attention (SLA) module is designed. This module leverages the associativity of matrix multiplication to linearly reduce complexity and employs a squareplus kernel function to enhance the representational capacity of the attention mechanism.
 - Building on the foundation of the SLA module, we introduce a novel network architecture, GLANet. GLANet capitalizes on the SLA's efficient complexity management and its prowess in capturing global feature dependencies, integrating these advantages into its structural design. Through the deployment of the SLA module, GLANet effectively optimizes the expression of global spatial features, rendering it exceptionally effective for large-scale RSI segmentation tasks.
@@ -18,36 +18,36 @@ Semantic segmentation of remote sensing images (RSIs) plays a crucial role in va
 
 
 
-## Method Overview💡
+## 💡Method Overview
 
 <img src="images/network.png" alt="图片描述" width="900">
 
 
 
-## Visualization👀
-### Visualization on the Potsdam dataset
+## 👀Visualization
+### 👀Visualization on the Potsdam dataset
 
 <img src="images/Potsdam.png" alt="图片描述" width="800">
 
 
-### Visualization on the Vaihingen dataset
+### 👀Visualization on the Vaihingen dataset
 <img src="images/Vaihingen.png" alt="图片描述" width="800">
 
-## Usage🧠
+## 📦Usage
 
-### Train ###
+### 🚀Train 
 python train.py
 
-### Test ###
+### 🚀Test 
 python test.py
 
-### Datasets ###
+### 📦Datasets
 All datasets including ISPRS Potsdam, ISPRS Vaihingen, can be downloaded [here](https://www.isprs.org/education/benchmarks/UrbanSemLab/2d-sem-label-potsdam.aspx)
 
 
-## Results ##
+## 📊 Results
 
-### Results on the Potsdam dataset
+### 📊Results on the Potsdam dataset
 
 
 | Method | Background | Imp. surf. | Building | Low veg. | Tree | Car | mF1(%) | OA(%) | kappa | mIoU(%) |
@@ -70,7 +70,7 @@ All datasets including ISPRS Potsdam, ISPRS Vaihingen, can be downloaded [here](
 | **GLANet** | **67.17** | **90.41** | **95.04** | **84.73** | **82.68** | 89.63 | **84.94** | **88.10** | **0.84458** | **74.80** |
 
 
-### Results on the Potsdam dataset
+### 📊Results on the Potsdam dataset
 
 
 | Method | Background | Imp. surf. | Building | Low veg. | Tree | Car | mF1(%) | OA(%) | kappa | mIoU(%) |
@@ -94,7 +94,7 @@ All datasets including ISPRS Potsdam, ISPRS Vaihingen, can be downloaded [here](
 
 
 
-## Citation
+## 📝Citation
 
 If you use our code for research, please cite this paper: 
 
@@ -111,6 +111,6 @@ If you use our code for research, please cite this paper:
 }
 ```
 
-## Contact
+## 📧Contact
 
 If you encounter any problems or bugs, please don't hesitate to contact me at [yiweifang@hhu.edu.cn](mailto:yiweifang@hhu.edu.cn). 
